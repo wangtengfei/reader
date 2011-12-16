@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="colors">
+        <item>黑色</item>
+        <item>白色</item>
+        <item>灰色</item>
+        <item>黄色</item>
+        <item>绿色</item>
+        <item>蓝色</item>
+        <item>红色</item>
+    </string-array>
+    <string-array name="fontsize">
+        <item>16</item>
+        <item>18</item>
+        <item>20</item>
+        <item>22</item>
+        <item>24</item>
+    </string-array>
+    <string-array name="background">
+        <item>清新绿叶</item>
+        <item>火红烛心</item>
+        <item>黑夜灯桥</item>
+        <item>灰色书本</item>
+        <item>黄色书皮</item>
+        <item>苹果灰色</item>
+        <item>忆景思甜</item>
+        <item>蓝月星光</item>
+    </string-array>
+    <string-array name="zoom_factor">
+        <item>@string/auto</item>
+        <item>25%</item>
+        <item>50%</item>
+        <item>75%</item>
+        <item>100%</item>
+        <item>125%</item>
+    </string-array>
+
+</resources>

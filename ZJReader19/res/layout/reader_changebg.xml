@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/bottom_tool_bg"
+		android:layout_gravity="bottom|center_horizontal"
+		android:orientation="horizontal"
+		android:gravity="center">
+
+		<ImageButton
+			android:id="@+id/yellow_bg_btn"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginRight="3dp"
+			android:background="@drawable/yellow_bg_area" />
+		<ImageButton
+			android:id="@+id/gray_bg_btn"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginRight="3dp"
+			android:background="@drawable/gray_bg_area" />
+		<ImageButton
+			android:id="@+id/green_bg_btn"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginRight="3dp"
+			android:background="@drawable/green_bg_area" />
+		<ImageButton
+			android:id="@+id/blue_bg_btn"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginRight="3dp"
+			android:background="@drawable/blue_bg_area" />
+		<ImageButton
+			android:id="@+id/pink_bg_btn"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginRight="3dp"
+			android:background="@drawable/pink_bg_area" />
+		<ImageButton
+			android:id="@+id/mode_bg_btn"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:background="@drawable/night_mode_area" />
+	</LinearLayout>
+
+</LinearLayout>

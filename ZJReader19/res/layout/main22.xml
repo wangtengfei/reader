@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<Button
+		android:id="@+id/epub"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="epub加密"
+		android:layout_marginTop="10dp" />
+
+	<Button
+		android:id="@+id/epub1"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="epub明文"
+		android:layout_marginTop="10dp" />
+
+	<Button
+		android:id="@+id/pdf"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:text="pdf加密" />
+
+	<Button
+		android:id="@+id/pdf1"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:text="pdf明文" />
+
+	<Button
+		android:id="@+id/mp4"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:text="mp4加密" />
+
+	<Button
+		android:id="@+id/mp41"
+		android:layout_width="fill_parent"
+		android:layout_marginTop="10dp"
+		android:layout_height="wrap_content"
+		android:text="mp4明文" />
+
+	<Button
+		android:id="@+id/mp3"
+		android:layout_width="fill_parent"
+		android:layout_marginTop="10dp"
+		android:layout_height="wrap_content"
+		android:text="mp3明文" />
+</LinearLayout>

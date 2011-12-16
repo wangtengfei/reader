@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/root_view"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<FrameLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_below="@+id/title_bar">
+
+		<org.zlibrary.ui.android.view.ZLAndroidWidget
+			android:id="@+id/main_view"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:fadeScrollbars="false"
+			android:focusable="true"
+			android:scrollbarAlwaysDrawVerticalTrack="true"
+			android:scrollbars="vertical" />
+
+		<RelativeLayout
+			android:id="@+id/title_bar"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="top|center_horizontal"
+			android:background="@drawable/bookmark_title_bg"
+			android:orientation="horizontal"
+			android:visibility="gone">
+
+			<ImageButton
+				android:id="@+id/back"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"
+				android:layout_centerVertical="true"
+				android:background="#00000000"
+				android:paddingLeft="10dp"
+				android:src="@drawable/back_btn">
+			</ImageButton>
+
+			<ImageButton
+				android:id="@+id/gotopage"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+				android:background="#00000000"
+				android:src="@drawable/gotopage_btn">
+			</ImageButton>
+
+			<ImageButton
+				android:id="@+id/book_cate"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true"
+				android:background="#00000000"
+				android:paddingRight="10dp"
+				android:src="@drawable/btn_cate">
+			</ImageButton>
+		</RelativeLayout>
+
+		<LinearLayout
+			android:id="@+id/click_area"
+			android:layout_width="150dp"
+			android:layout_height="150dp"
+			android:layout_gravity="center" />
+
+		<TableLayout
+			android:id="@+id/menu_layout"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="bottom|center_horizontal"
+			android:background="@drawable/menubg"
+			android:gravity="center"
+			android:stretchColumns="0,1,2,3"
+			android:visibility="gone">
+
+			<TableRow
+				android:paddingBottom="20dp">
+
+				<LinearLayout
+					android:id="@+id/menu_action_bookmark"
+					android:orientation="vertical">
+
+					<ImageView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_horizontal"
+						android:src="@drawable/menu_bookmark" />
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_horizontal"
+						android:text="@string/menu_bookmark" />
+				</LinearLayout>
+
+				<LinearLayout
+					android:id="@+id/menu_action_changefont"
+					android:orientation="vertical">
+
+					<ImageView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_horizontal"
+						android:src="@drawable/menu_changefont" />
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_horizontal"
+						android:text="@string/menu_fontsize" />
+				</LinearLayout>
+
+				<LinearLayout
+					android:id="@+id/menu_action_autoread"
+					android:orientation="vertical">
+
+					<ImageView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_horizontal"
+						android:src="@drawable/menu_autoread" />
+
+					<TextView
+						android:id="@+id/auto_read_text"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_horizontal"
+						android:text="@string/menu_autoread" />
+				</LinearLayout>
+
+				<LinearLayout
+					android:id="@+id/menu_action_search"
+					android:orientation="vertical">
+
+					<ImageView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_horizontal"
+						android:src="@drawable/menu_search" />
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_horizontal"
+						android:text="@string/menu_search" />
+				</LinearLayout>
+			</TableRow>
+
+			<TableRow>
+
+				<LinearLayout
+					android:id="@+id/menu_action_changebright"
+					android:orientation="vertical">
+
+					<ImageView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_horizontal"
+						android:src="@drawable/menu_changebright" />
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_horizontal"
+						android:text="@string/menu_bright" />
+				</LinearLayout>
+
+				<LinearLayout
+					android:id="@+id/menu_action_changebg"
+					android:orientation="vertical">
+
+					<ImageView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_horizontal"
+						android:src="@drawable/menu_changebg" />
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_horizontal"
+						android:text="@string/menu_changebg" />
+				</LinearLayout>
+
+				<LinearLayout
+					android:id="@+id/menu_action_rotate"
+					android:orientation="vertical">
+
+					<ImageView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_horizontal"
+						android:src="@drawable/menu_rotate" />
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_horizontal"
+						android:text="@string/menu_rotate" />
+				</LinearLayout>
+
+				<LinearLayout
+					android:id="@+id/menu_action_setting"
+					android:orientation="vertical">
+
+					<ImageView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_horizontal"
+						android:src="@drawable/menu_setting" />
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_horizontal"
+						android:text="@string/menu_setting" />
+				</LinearLayout>
+			</TableRow>
+		</TableLayout>
+	</FrameLayout>
+
+</RelativeLayout>

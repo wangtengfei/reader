@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FictionBook xmlns="http://www.gribuser.ru/xml/fictionbook/2.0" xmlns:l="http://www.w3.org/1999/xlink"><description><title-info><author><last-name>ZJReader</last-name></author> <book-title>关于ZJReader</book-title> <lang>en</lang></title-info></description>
+<body>
+<title><p>关于ZJReader介绍</p></title>
+<p>通过ZJReader阅读软件，您可以享受更多的阅读乐趣。您可以根据需要任意设置颜色，字体，按键绑定或者是更改对话框中的其他属性。</p>
+<P>支持PDF/EPUB/TXT/HTML/MP3/3GP/MP4/FLV阅读</p>
+<p>支持DRM解密</p>
+<p>页码显示：当前页码/总页码</p>
+<p>初次打开图书页为目录页面</p>
+<p>章节目录显示</p>
+<p>字体大小设置。</p>
+<p>白天（白底黑字）、黑夜（黑底白字，降低屏幕亮度）模式切换</p>
+<p>界面语言支持中英文</P>
+<empty-line/>
+<p>有二种方法可以将书加入ZJReader的书库。</p>
+<p>第一种方法是将图书文件复制到您的设备目录中/ SD卡/书籍（或任何其子目录）。 Reader将自动添加此书。</p>
+<p>第二种方法是点击标准Android浏览器中的图书链接（如带有<code>ePub</code>扩展名的文件链接。）图书将会被下载到设备中并且用ZJReader打开。如果你再次点击相同的链接，图书不会重复下载，本地阅读本将供阅读。</p>
+<empty-line/>
+</body>
+</FictionBook>
+

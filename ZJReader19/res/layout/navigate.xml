@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<LinearLayout
+		android:layout_centerInParent="true"
+		android:background="@drawable/center_message_bg"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:gravity="center">
+		<TextView
+			android:id="@+id/book_position_text"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:singleLine="true"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:paddingTop="4px" />
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_alignParentBottom="true"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:background="@drawable/bottom_tool_bg"
+		android:layout_gravity="bottom|center_horizontal">
+		<ImageView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_gravity="center|left"
+			android:src="@drawable/left_arrow"
+			android:layout_weight="2" />
+		<SeekBar
+			android:layout_gravity="center"
+			android:id="@+id/book_position_slider"
+			android:layout_height="wrap_content"
+			android:layout_width="200dp"
+			android:layout_weight="1"
+			android:paddingTop="4px" />
+		<ImageView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_gravity="center|right"
+			android:src="@drawable/rigth_arrow"
+			android:layout_weight="2" />
+	</LinearLayout>
+</RelativeLayout>

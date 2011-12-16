@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" android:weightSum="1" android:orientation="vertical">
+    <LinearLayout android:id="@+id/linearLayout2" android:layout_width="fill_parent" android:background="@drawable/dingbu" android:weightSum="1" android:layout_height="40dp">
+        <TextView android:id="@+id/textView1" android:text="播放列表-50首歌曲" android:layout_gravity="top|left" android:layout_width="200dp" android:layout_marginLeft="30dp" android:textColor="#000000" android:layout_marginTop="7dp" android:textSize="20dp" android:layout_height="23dp"></TextView>
+        <ImageView android:layout_width="wrap_content" android:id="@+id/imageView1" android:src="@drawable/dingbubutton" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="5dp"></ImageView>
+    </LinearLayout>
+    <ListView android:layout_width="fill_parent" android:id="@+id/@android:id/list" android:background="#e0e0e0" android:layout_height="460dp"></ListView>
+    <LinearLayout android:layout_height="wrap_content" android:id="@+id/linearLayout1" android:layout_width="fill_parent" android:background="#909090">
+        <Button android:id="@+id/button2" android:layout_height="wrap_content" android:text="全选" android:layout_width="160dp"></Button>
+        <Button android:id="@+id/button3" android:layout_height="wrap_content" android:text="全部取消" android:layout_width="160dp"></Button>
+        
+    </LinearLayout>
+    
+</LinearLayout>

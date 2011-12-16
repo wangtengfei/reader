@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FictionBook xmlns="http://www.gribuser.ru/xml/fictionbook/2.0" xmlns:l="http://www.w3.org/1999/xlink"><description><title-info><author><last-name>ZJReader</last-name></author> <book-title>About ZJReader</book-title> <lang>en</lang></title-info></description>
+<body>
+<title> <p> feature points on ZJReader Introduction </ p> </ title> 
+<p> by ZJReader reading software, you can enjoy more fun to read. You can be arbitrarily set the color, font, change the key binding or other properties in the dialog box. </P> 
+<P> Support the PDF /EPUB/TXT/HTML/MP3/3GP/MP4/FLV reader </p> 
+<p> support DRM decryption </p> 
+<p> Page Display: The current page number / total page number </p> 
+<p> first open book pages as a directory page </p> 
+<p> section catalog display </p> 
+<p> font size settings. </P> 
+<p> day (black and white), dark (black and white, lower screen brightness) mode </p> 
+<p> interface language support in English </P> 
+<empty-line/> 
+<p> There are two ways to join ZJReader the book stacks. </P> 
+<p> The first method is to copy the book files to your device directory / SD Card / books (or any of its subdirectories). Reader will automatically add the book. </P> 
+<p> second method is to click on the standard Android browser link to the book (such as with <code> ePub </ code> extension of file link.) books will be downloaded to the device and used ZJReader open. If you click the same link again, the book will not repeat the download, read this will be available for local reading. </P> 
+<empty-line/>
+</body>
+</FictionBook>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="org.zlibrary.ui.android" android:versionCode="@INTVERSION@" android:versionName="@VERSION@">
+	<uses-sdk android:minSdkVersion="3"/>
+	<supports-screens android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:anyDensity="true" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<application android:name="org.zlibrary.ui.android.library.ZLAndroidApplication" android:icon="@drawable/zjreader" android:label="ZJReader">
+		<activity android:name=".library.BugReportActivity" android:label="ZJReader crash" android:configChanges="orientation|keyboardHidden"/>
+		<activity android:name="org.android.zjreader.ZJReader" android:launchMode="singleTask" android:icon="@drawable/zjreader" android:label="ZJReader" android:configChanges="orientation|keyboardHidden">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+			<meta-data android:name="android.app.default_searchable" android:value="org.android.zjreader.TextSearchActivity" />
+		</activity>
+		<activity android:name="org.android.zjreader.TextSearchActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.SEARCH" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+			<meta-data android:name="android.app.searchable" android:resource="@xml/searchable" />
+		</activity>
+		<activity android:name="org.android.zjreader.BookSearchActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.SEARCH" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+			<meta-data android:name="android.app.searchable" android:resource="@xml/searchable" />
+		</activity>
+		<activity android:name="org.android.zjreader.BookmarkSearchActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.SEARCH" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+			<meta-data android:name="android.app.searchable" android:resource="@xml/searchable" />
+		</activity>
+		<activity android:name="org.android.zjreader.LibraryTabActivity" android:configChanges="orientation|keyboardHidden">
+			<meta-data android:name="android.app.default_searchable" android:value="org.android.zjreader.BookSearchActivity" />
+		</activity>
+		<activity android:name="org.android.zjreader.TOCActivity" android:configChanges="orientation|keyboardHidden" />
+		<activity android:name="org.android.zjreader.BookmarksActivity" android:configChanges="orientation|keyboardHidden">
+			<meta-data android:name="android.app.default_searchable" android:value="org.android.zjreader.BookmarkSearchActivity" />
+		</activity>
+		<activity android:name="org.android.zjreader.BookmarkEditActivity" android:theme="@android:style/Theme.Dialog" android:configChanges="orientation|keyboardHidden"/>
+		<activity android:name="org.android.zjreader.preferences.PreferenceActivity" android:configChanges="orientation|keyboardHidden" />
+		<activity android:name="org.android.zjreader.preferences.BookInfoActivity" android:configChanges="orientation|keyboardHidden" />
+		<activity android:name="org.android.zjreader.network.BookDownloader" android:process=":bookDownloader" android:theme="@android:style/Theme.NoDisplay">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<data android:host="*" android:scheme="http" android:pathPattern=".*\\.epub" />
+				<data android:host="*" android:scheme="http" android:pathPattern=".*\\.oeb" />
+				<data android:host="*" android:scheme="http" android:pathPattern=".*\\.fb2" />
+				<data android:host="*" android:scheme="http" android:pathPattern=".*\\.fb2\\.zip" />
+				<data android:host="*" android:scheme="http" android:pathPattern=".*\\.mobi" />
+				<data android:host="*" android:scheme="http" android:pathPattern=".*\\.prc" />
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<data android:host="*" android:scheme="http" />
+				<data android:mimeType="application/epub+zip" />
+				<data android:mimeType="application/x-pilot-prc" />
+				<data android:mimeType="application/x-mobipocket-ebook" />
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<data android:host="*rus.ec" android:mimeType="application/zip" android:scheme="http" />
+			</intent-filter>
+		</activity>
+		<service android:name="org.android.zjreader.network.BookDownloaderService" android:process=":bookDownloader" />
+		<activity android:name="org.zlibrary.ui.android.dialogs.DialogActivity" android:label="" android:configChanges="orientation|keyboardHidden"/>
+		<activity android:name="org.android.zjreader.network.NetworkSearchActivity" android:process=":networkLibrary" android:theme="@android:style/Theme.NoDisplay">
+			<intent-filter>
+				<action android:name="android.intent.action.SEARCH" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+			<meta-data android:name="android.app.searchable" android:resource="@xml/searchable" />
+		</activity>
+		<activity android:name="org.android.zjreader.network.NetworkLibraryActivity" android:process=":networkLibrary" android:configChanges="orientation|keyboardHidden">
+			<meta-data android:name="android.app.default_searchable" android:value="org.android.zjreader.network.NetworkSearchActivity" />
+		</activity>
+		<activity android:name="org.android.zjreader.network.NetworkCatalogActivity" android:process=":networkLibrary" android:configChanges="orientation|keyboardHidden" />
+		<service android:name="org.android.zjreader.network.ItemsLoadingService" android:process=":networkLibrary" />
+		<activity android:name="org.android.zjreader.network.NetworkBookInfoActivity" android:process=":networkLibrary" android:configChanges="orientation|keyboardHidden" />
+		<activity android:name="org.android.zjreader.network.BookDownloaderCallback" android:process=":networkLibrary" android:theme="@android:style/Theme.NoDisplay" />
+	</application>
+</manifest> 

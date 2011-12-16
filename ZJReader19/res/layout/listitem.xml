@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout Android:id="@+id/LinearLayout01"
+	Android:layout_width="fill_parent" xmlns:Android="http://schemas.android.com/apk/res/android"
+	Android:layout_height="wrap_content" >
+	<TextView Android:layout_height="wrap_content"
+		Android:layout_width="fill_parent" Android:textSize="20dip"
+		Android:textColor="#FFFFFFFF" Android:id="@+id/ItemText" 
+		Android:gravity="center"/>
+
+</LinearLayout>   

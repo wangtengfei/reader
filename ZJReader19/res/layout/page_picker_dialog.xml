@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (C) 2009 Li Wenhao  <liwenhao.g@gmail.com>
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2, or (at your option)
+ * any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ */
+ -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content" android:orientation="vertical"
+	android:layout_width="fill_parent">
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:gravity="center">
+
+
+		<ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/minus" android:id="@+id/page_picker_minus"/>
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:id="@+id/page_picker_message" android:textSize="30dip"></TextView>
+
+		<ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/plus" android:id="@+id/page_picker_plus"/>
+	</LinearLayout>
+			<SeekBar android:id="@+id/page_picker_seeker"
+			android:minWidth="150dip" android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:layout_margin="20dip"></SeekBar>
+	
+</LinearLayout>

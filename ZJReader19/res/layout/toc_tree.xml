@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/bookmark_bg"
+	android:orientation="vertical">
+
+	<RelativeLayout
+		android:background="@drawable/bookmark_title_bg"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<TextView
+			android:text="@string/book_toc_cate"
+			android:textSize="20dp"
+			android:layout_centerInParent="true"
+			android:shadowDx="1"
+			android:shadowDy="1"
+			android:shadowRadius="1"
+			android:shadowColor="#ff000000"
+			android:layout_width="wrap_content"
+			android:textColor="#ffffffff"
+			android:layout_height="wrap_content" />
+		<ImageButton
+			android:id="@+id/back_btn"
+			android:src="@drawable/back_btn"
+			android:background="#00000000"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:paddingLeft="10dp"
+			android:layout_centerVertical="true">
+		</ImageButton>
+	</RelativeLayout>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:paddingLeft="10dp"
+		android:paddingRight="10dp">
+		<ListView
+			android:background="@color/cate_gray"
+			android:id="@+id/book_toc_listview"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_gravity="center_horizontal"
+			android:divider="@drawable/list_divider"
+			android:cacheColorHint="#00000000" />
+	</LinearLayout>
+
+</LinearLayout>
